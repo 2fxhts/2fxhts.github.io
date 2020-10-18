@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>主页-复旦大学第二附属学校作业提交系统</title>
+	<meta name="generator" content="Shuzhou Website Designer Education" />
+	<meta property="og:title" content="2fxhts.github.io" />
+	<meta property="og:locale" content="en_US" />
+	<link rel="canonical" href="https://2fxhts.github.io/" />
+	<meta property="og:url" content="https://2fxhts.github.io/" />
+	<meta property="og:site_name" content="主页-复旦大学第二附属学校作业提交系统" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script type="application/ld+json">
+	{
+		"@type":"WebSite",
+		"headline":"2fxhts.github.io",
+		"url":"https://2fxhts.github.io/",
+		"name":"2fxhts.github.io",
+		"@context":"https://schema.org"
+	}
+	</script>
+	<script>
+		function url(i){
+			window.location.href="https://2fxhts.github.io"+i;
+		}
+	</script>
+  </head>
+  <body>
+	<h3>复旦大学第二附属学校作业提交系统</h3>
+	<fieldset>
+		<legend><b>登录</b></legend>
+		<span id="loginpane"></span>
+	</fieldset>
+	<script type="text/javascript">
+			if (window.location.href == "https://2fxhts.github.io/login/?type=student"){
+				document.getElementById("loginpane").innerHTML = "<input type='text' placeholder='班级编号' id='class'/><br><input type='text' placeholder='用户名' id='username'/><br><input type='password' placeholder='密码' id='pwd'/><br><input type='submit' value='登录' onclick='login();'/><br><script src='/js/sas/student.js'></script>";
+			}
+			else {
+				if (window.location.href == "https://2fxhts.github.io/login/?type=teacher"){
+					document.getElementById("loginpane").innerHTML = "<input type='text' placeholder='用户名' id='username'/><br><input type='password' placeholder='密码' id='pwd'/><br><input type='submit' value='登录' onclick='login()'/><script src='/js/sas/teacher.js'></script>";
+				}
+				else {
+					if (window.location.href == "https://2fxhts.github.io/login/?type=teacher"){
+						document.getElementById("loginpane").innerHTML = "<input type='text' placeholder='用户名' id='username'/><br><input type='password' placeholder='密码' id='pwd'/><br><input type='submit' value='登录' onclick='login()'/><script src='/js/sas/admin.js'></script>";
+					}
+					else{
+						document.getElementById("loginpane").innerHTML = "<b>您好，您的访问参数不正确，无法访问登录系统。</b><br><b>参数：<span id='path'></span></b><script>document.getElementById('path')=window.location.path;</script>";
+					}
+				}
+			}
+	</script>
+	<hr>
+	<footer>
+		<center>
+			&copy;2020 复旦大学第二附属学校2024届2班 保留所有权
+		</center>
+		In partner with<br>
+		<img src="gitedu.jpg"/>
+		<img src="https://education.github.com/assets/pack/logo-microsoft-2ae66d4033f4624cc4d1a9ebebf547a5a30fed4280145e22233d2d5433e43a76.jpg" width=256 height=78/>
+	</footer>
+	</body>
+</html>
